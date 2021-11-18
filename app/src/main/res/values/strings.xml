@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">AppSalvarInstancia</string>
     <string name="numero">0</string>
-    <string name="masuno"> +1 </string>
-    <string name="menosuno"> -1 </string>
+    <string name="masuno">+1</string>
+    <string name="menosuno">-1</string>
 </resources>
