@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvNumero"
+        android:layout_width="280dp"
+        android:layout_height="309dp"
+        android:background="#000000"
+        android:backgroundTint="#000000"
+        android:backgroundTintMode="add"
+        android:text="@string/numero"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#0091EA"
+        android:textSize="85sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.07" />
+
+    <Button
+        android:id="@+id/btnMasUno"
+        android:layout_width="122dp"
+        android:layout_height="122dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="52dp"
+        android:backgroundTint="#2962FF"
+        android:onClick="SumarUno"
+        android:text="@string/masuno"
+        android:textColor="#000000"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnMenosUno"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNumero"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btnMenosUno"
+        android:layout_width="122dp"
+        android:layout_height="122dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#2962FF"
+        android:text="@string/menosuno"
+        android:textColor="#000000"
+        android:textSize="48sp"
+        android:onClick="RestarUno"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNumero"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
