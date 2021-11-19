@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    protected void OnSaveInstanceState(Bundle estado) {
+    public void onSaveInstanceState(Bundle estado) {
         super.onSaveInstanceState(estado);
         estado.putInt(VALOR_GUARDADO, valor);
     }
@@ -38,4 +38,6 @@ public class MainActivity extends AppCompatActivity {
         valor--;
         tv.setText(String.valueOf(valor));
     }
+
+
 }
